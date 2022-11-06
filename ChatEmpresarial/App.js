@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import {
   SafeAreaView,
   ScrollView,
@@ -11,17 +12,6 @@ import {
 
 import firebase from './src/FirebaseConnection'; 
 
-export default class App extends Component {
-  render(){
-    return (
-      <View style={style.container}>
-        <Text style={style.welcome}>
-          Bem vindo Inicio do App.
-        </Text>
-      </View>
-    );
-  }
-}
 
 const styles = StyleSheet.create({
   sectionContainer: {
@@ -41,3 +31,17 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
+
+
+
+export default class App extends Component {
+  render(){
+    return (
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          Bem vindo Inicio do App.
+        </Text>
+      </View>
+    );
+  }
+}

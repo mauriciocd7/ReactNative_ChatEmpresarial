@@ -19,7 +19,7 @@ export class Preload extends Component{ /* screem */
     render(){
         return(
             <View style={styles.container}>
-                <Text>Carregando...</Text>
+                <Text>Carregando...{this.props.status}</Text>
             </View>
         );
     }
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (state) => {
     return{
-
+        status:state.auth.status 
     };
 };
 

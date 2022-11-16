@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { checkLogin } from './actions/AuthActions'; /*--Login verified--*/;
 
-export class Preload extends Component{ /* screem */
+export class Preload extends Component{ /* screen */
 
     static navigationOptions = {
         title:'',
@@ -39,5 +39,5 @@ const mapStateToProps = (state) => {
     };
 };
 
-const PreloadConnect = connect(mapStateToProps, { checkLogin })(Preload); /* Connection 2 parameters in Preload screem*/
+const PreloadConnect = connect(mapStateToProps, { checkLogin })(Preload); /* Connection 2 parameters in Preload screen*/
 export default PreloadConnect;

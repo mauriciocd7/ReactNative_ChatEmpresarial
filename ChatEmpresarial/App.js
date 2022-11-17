@@ -1,5 +1,5 @@
 import React from 'react';
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator } from '@react-navigation/native-stack';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import ReduxThunk from 'redux-thunk';
